@@ -11,7 +11,6 @@ get '/' do
   	@pants = correct_zip[0]
 
 
-
   erb :pants
 end
 
@@ -27,7 +26,7 @@ end
 
 
 
-
+	#key = 2ae9937292c1633d16c2d7cf475cb4c2
 
 
   # Two actions can use the same template
