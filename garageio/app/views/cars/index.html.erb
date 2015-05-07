@@ -1,0 +1,33 @@
+<h1>GARAGEIO</h1>
+
+
+
+	<h2>Cars in the Garage:</h2>
+<table style="width:60%">
+
+	
+    <th>Make</th>
+    <th>Model</th> 
+    <th>Year</th>
+    <th>Color</th>
+    <th>Nickname</th>
+ </table>
+
+	<% @cars.each do |car| %>
+<table style="width:60%">
+  <tr>
+  	<td><b> <%= car.make %> </b></td>
+    <td> <%= car.model %> </td>
+    <td> <%= car.year %> </td> 
+    <td> <%= car.color %> </td>
+    <td> "<%= car.nickname %>" </td>
+    <br>
+  </tr>
+
+ </table>
+
+<!-- students are active record model instance, .name is a method of the student class. method for every attribute.  -->
+<!-- equals sign above because that is the ONLY part you are rendering -->
+
+	<%end%>
+
