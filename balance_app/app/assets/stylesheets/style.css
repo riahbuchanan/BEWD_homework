@@ -1,0 +1,88 @@
+
+
+
+h1 {
+	color: red;
+	font-size: 20px;
+	font-family: 'Alegreya', serif; 
+	font-weight: 400;
+
+
+}
+
+h2 {
+
+	font-family: helvetica;
+
+}
+
+th {
+	text-align: left;
+	padding:0 15px 0 15px;
+}
+
+td
+{
+	
+	text-align: left;
+    padding:0 15px 0 15px;
+}
+
+body {
+
+	font-family: helvetica;
+	font-size: 12px;
+	background-color: #F7F7F7;
+}
+
+.birth {
+	font-family: 'Alegreya', serif; 
+	font-weight: 700;
+}
+
+.death {
+	font-family: 'Alegreya', serif; 
+	font-weight: 700;
+	
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 4px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}

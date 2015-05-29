@@ -1,0 +1,73 @@
+
+<div>
+  <ul>
+      <li><a href="/">FEED</a></li>
+      <li><u><a href="lists">RECORDS</a></u></li>    
+      <li><a href="new">SUBMIT</a></li>
+  </ul>
+</div>
+
+
+
+  <div class="section group">
+    <div class="col span_1_of_2">
+
+  <h1>Lost</h1>
+  <h1> - </h1>
+  <table class='table'>
+    <thead>
+      <th>ITEM</th>
+      <th>FIRST SEEN...</th>
+      <th>COLOR</th>
+      <th>SIZE</th>
+      <th>#</th>
+    </thead>
+    <tbody>
+    
+    <% @losts.each do |b| %>
+    <tr>
+      <td><%= b.item_name %></td>
+      <td><%= b.last_seen %></td>
+      <td><%= b.color %></td>
+      <td><%= b.size %></td>
+      <td><%= b.quantity %></td>
+    </tr>
+      <% end %>
+
+    </tbody>
+  </table>
+  </div>
+
+ <div class="col span_1_of_2">
+
+  <h1>Found</h1>
+  <h1> + </h1>
+    <table class='table'>
+
+    <thead>
+      <th>ITEM</th>
+      <th>FIRST SEEN...</th>
+      <th>COLOR</th>
+      <th>SIZE</th>
+      <th>#</th>
+    </thead>
+  <tbody>
+    <% @founds.each do |b| %>
+
+    <tr>
+      <td><%= b.item_name %></td>
+      <td><%= b.last_seen %></td>
+      <td><%= b.color %></td>
+      <td><%= b.size %></td>
+      <td><%= b.quantity %></td>
+
+    </tr>
+
+    <% end %>
+  </tbody>
+  </table>
+  </div>
+
+</div>
+
+

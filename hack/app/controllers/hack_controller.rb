@@ -23,3 +23,20 @@ def secret     #defines the action
 
 
 end
+
+
+# def mainframe
+# 	code = '1245'
+
+# if params['code'] == code
+
+# else
+# 	redirect_to '/failed'
+
+# end
+# end
+
+
+
+
+# protect_from_forgery with: :null_session

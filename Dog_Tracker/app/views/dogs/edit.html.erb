@@ -1,0 +1,17 @@
+<h2> Edit Dogs</h2>
+ <!-- copy form from new page -->
+
+<%= form_for @dog url: "/dogs/#{@dog.id}" do |ask| %>
+Name
+<%= ask.text_field :name %><br>
+Breed
+<%= ask.text_field :breed %><br>
+Color
+<%= ask.text_field :color %><br>
+Size
+<%= ask.text_field :size %><br>
+Age
+<%= ask.text_field :age %><br>
+<%= ask.submit "Add Dog" %>
+<% end %>
+

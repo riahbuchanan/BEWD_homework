@@ -1,0 +1,44 @@
+
+<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+
+
+<div class="section group">
+	<div class="col span_1_of_2">
+
+	<h1> Life </h1>
+		<div class="birth">
+			<h1> + </h1>
+
+	
+			<%  @birth_list.each do |list_hash| %>
+			<% list_hash.text.capitalize.gsub!(/[!@%&"]/,'') %> 
+			<%= raw list_hash.text %> <br> <br>
+
+				<% end %>
+
+		</div>
+
+		
+
+
+	</div>
+
+	<div class="col span_1_of_2">
+	<h1> Death </h1>
+	
+		<div class="death">
+			<h1> – </h1>
+	
+			<% @died_list.each do |list_hash| %>
+			<% list_hash.text.capitalize.gsub!(/[!@%&"]/,'') %> 
+			<%= raw list_hash.text %> <br> <br>
+
+			<% end %>
+		</div>
+
+	</div>
+</div>
+
+
+	
+

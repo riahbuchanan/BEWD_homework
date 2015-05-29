@@ -1,0 +1,30 @@
+<h1>Dog Shelter</h1>
+
+<h2>Take home a dog today:</h2>
+
+<table style="width:60%">
+
+	
+    <th>Name</th>
+    <th>Breed</th> 
+    <th>Color</th>
+    <th>Size</th>
+    <th>Age</th>
+ </table>
+
+	<% @dogs.each do |info| %>
+		<table style="width:60%">
+  <tr>
+  	<td><b> <%= info.name %> </b></td>
+    <td> <%= info.breed %> </td>
+    <td> <%= info.color %> </td> 
+    <td> <%= info.size %> </td>
+    <td> <%= info.age %> </td>
+    <br>
+  	</tr>
+   </table>
+<!-- students are active record model instance, .name is a method of the student class. method for every attribute.  -->
+<!-- equals sign above because that is the ONLY part you are rendering -->
+
+	<%end%>
+

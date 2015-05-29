@@ -1,0 +1,80 @@
+<div>
+	<ul>
+		<li><u><a href="/">FEED</a></u></li>
+  		<li><a href="lists">RECORDS</a></li>
+  		<li><a href="new">SUBMIT</a></li>
+	</ul>
+</div>
+
+
+ 
+
+<div style='width: 400px'>
+
+<h1> Lost </h1>
+
+  <%= form_for @lost do |f| %>
+
+      <%= f.label :item_name %>
+      <%= f.text_field :item_name, class: 'form-control' %>
+
+      <%= f.label :last_seen %>
+      <%= f.text_field :last_seen, class: 'form-control' %>
+   
+
+      <%= f.label :color %>
+      <%= f.text_field :color, class: 'form-control' %>
+
+           <%= f.label :size %>
+      <%= f.text_field :size, class: 'form-control' %>
+
+
+      <%= f.label :quantity %>
+      <%= f.number_field :quantity, class: 'form-control' %>
+
+
+
+      <%= f.label :lost_id %>
+      <%= f.number_field :lost_id, class: 'form-control' %>
+ 
+
+    <%= f.submit 'You lost it.', class: 'btn btn-warning' %>
+  <% end %>
+
+</div>
+
+
+
+
+<div style='width: 400px'>
+
+<h1> Found </h1>
+
+  <%= form_for @found do |f| %>
+
+       <%= f.label :item_name %>
+      <%= f.text_field :item_name, class: 'form-control' %>
+
+      <%= f.label :last_seen %>
+      <%= f.text_field :last_seen, class: 'form-control' %>
+   
+
+      <%= f.label :color %>
+      <%= f.text_field :color, class: 'form-control' %>
+
+           <%= f.label :size %>
+      <%= f.text_field :size, class: 'form-control' %>
+
+
+      <%= f.label :quantity %>
+      <%= f.number_field :quantity, class: 'form-control' %>
+
+
+
+      <%= f.label :found_id %>
+      <%= f.number_field :found_id, class: 'form-control' %>
+ 
+
+    <%= f.submit 'You found it.', class: 'btn btn-warning' %>
+  <% end %>
+</div>

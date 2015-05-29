@@ -1,0 +1,27 @@
+<h1>Books</h1>
+
+<a href="/books/new">Add a Book to the Library</a>
+
+	<h2>Books in the Library</h2>
+<table style="width:60%">
+
+	
+    <th>Title</th>
+    <th>Genre</th> 
+    <th>Year</th>
+   
+ </table>
+
+	<% @books.each do |book| %>
+<table style="width:60%">
+  <tr>
+  	<td><b> <%= book.title %> </b></td>
+    <td> <%= book.genre %> </td>
+    <td> <%= book.year_published %> </td> 
+
+    <br>
+  </tr>
+
+ </table>
+
+	<%end%>
